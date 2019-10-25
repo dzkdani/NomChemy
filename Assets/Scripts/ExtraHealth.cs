@@ -5,8 +5,7 @@ using UnityEngine;
 public class ExtraHealth : MonoBehaviour
 {
     public HealthBarManager healthbar;
-    [SerializeField]
-    private int healAmount = 30;
+    private const int healAmount = 2;
 
     private void OnCollisionEnter2D(Collision2D other) {
         if (other.gameObject.tag == "Player") {

@@ -6,9 +6,8 @@ using UnityEngine.UI;
 public class HealthBarManager : MonoBehaviour
 {
     public Image healthbar;
-    [SerializeField]
-    private float currentHealth;
-    private float maxHealth = 100f;
+    private float currentHealth = 5;
+    private const int maxHealth = 5;
 
     public void onTakeDamage(int damage) {
         currentHealth -= damage; 
