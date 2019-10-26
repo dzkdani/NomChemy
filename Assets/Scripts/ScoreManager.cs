@@ -5,20 +5,19 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
-    [SerializeField]
-    private TextMeshProUGUI skorText;
+    public TextMeshProUGUI skorText;
     [SerializeField]
     private int currentSkor;
     // Start is called before the first frame update
     void Awake()
     {
-        skorText = FindObjectOfType<TextMeshProUGUI>();
+     
     }
 
     // Update is called once per frame
     void Update()
     {
-        //kondisi nambah skor
+        //kondisi nambah skor, nanti ganti
         if(Input.GetButtonDown("Fire1")) {
             currentSkor += 10;
         }

@@ -6,9 +6,13 @@ using UnityEngine.UI;
 public class HealthBarManager : MonoBehaviour
 {
     public Image healthbar;
-    private float currentHealth = 5;
+    public float currentHealth;
     private const int maxHealth = 5;
-
+    private const int minHealth = 0;
+    private void Awake() {
+        currentHealth = maxHealth;
+    }
+    
     public void onTakeDamage(int damage) {
         currentHealth -= damage; 
         healthbar.fillAmount = currentHealth / maxHealth;

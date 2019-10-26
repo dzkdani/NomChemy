@@ -8,6 +8,7 @@ TagManager:
   - Obstacle
   - Red
   - Orange
+  - SkorText
   layers:
   - Default
   - TransparentFX

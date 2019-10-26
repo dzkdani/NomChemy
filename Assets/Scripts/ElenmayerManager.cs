@@ -20,7 +20,7 @@ public class ElenmayerManager : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D other) {
         if (other.collider.tag == "Player") {
             soal.count += 1;
-            Destroy(gameObject, 0.25f);
+            Destroy(gameObject);
         }
     }
 }

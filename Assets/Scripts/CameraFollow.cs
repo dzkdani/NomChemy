@@ -4,20 +4,20 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
+    private readonly string plyr = "Player";
     private Vector2 currentVelocity;
-    [SerializeField]
-    private GameObject player;
+    [SerializeField] private GameObject player;
     [Range(0,2)]
-    public float smoothTimeY;
+    [SerializeField] private float smoothTimeY = 0.65f;
     [Range(0,2)]
-    public float smoothTimeX;
-    public bool boundaries;
+    [SerializeField] private float smoothTimeX = 0.3f;
+    [SerializeField] private bool enableBound = true;
     public Vector3 minCamPos;
     public Vector3 maxCamPos;
     // Start is called before the first frame update
     void Awake()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag(plyr);
     }
     // Update is called once per frame
     void FixedUpdate()
@@ -27,7 +27,7 @@ public class CameraFollow : MonoBehaviour
 
         transform.position = new Vector3(posX, posY, transform.position.z);
         
-        if (boundaries) {
+        if (enableBound) {
             transform.position = new Vector3(Mathf.Clamp(transform.position.x, minCamPos.x, maxCamPos.x), 
             Mathf.Clamp(transform.position.y, minCamPos.y, maxCamPos.y),
             Mathf.Clamp(transform.position.z, minCamPos.z, maxCamPos.z));
