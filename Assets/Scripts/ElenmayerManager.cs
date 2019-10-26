@@ -1,25 +1,21 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class ElenmayerManager : MonoBehaviour
 {
-    public SoalManager soal;
-    // Start is called before the first frame update
-    void Start()
-    {
-        //get nama elenmayer
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //display nama di atas
+    private SoalManager soal;
+    private ElenCounter elenUICounter;
+    private void Awake() {
+        soal = FindObjectOfType<SoalManager>();
+        elenUICounter  =FindObjectOfType<ElenCounter>();
     }
 
     private void OnCollisionEnter2D(Collision2D other) {
         if (other.collider.tag == "Player") {
-            soal.count += 1;
+            soal.addCounterElen(1);
+            elenUICounter.addElenUI();
             Destroy(gameObject);
         }
     }

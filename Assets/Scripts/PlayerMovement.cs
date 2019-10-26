@@ -19,7 +19,6 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     [SerializeField] private HealthBarManager playerHealth;
 
-    private readonly string jmp = "Jump";
     private readonly string horizonMov = "Horizontal";
 
     // Start is called before the first frame update
@@ -31,9 +30,9 @@ public class PlayerMovement : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        //Nyawa
-        if (playerHealth.currentHealth <= 0) {
-            Debug.Log("Gim Over" + playerHealth.currentHealth);
+        //cek nyawa utk gim over
+        if (playerHealth.getHealth() <= 0) {
+            Debug.Log("Gim Over" + playerHealth.getHealth());
         }
     }
 
@@ -59,13 +58,13 @@ public class PlayerMovement : MonoBehaviour
     void Jump() {
 
         //TheJump
-        if (Input.GetButtonDown(jmp) && isGrounded == true) {
+        if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded == true) {
             rb.velocity = Vector2.up * jumpVelocity;
         }
         //SmoothJump
         if (rb.velocity.y < 0) {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
-        } else if (rb.velocity.y > 0 && !Input.GetButton(jmp)) {
+        } else if (rb.velocity.y > 0 && !Input.GetKey(KeyCode.UpArrow)) {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }    
     }
