@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class kunciSoal1 {
 
@@ -111,6 +112,7 @@ public class SoalManager : MonoBehaviour
         }
         if (currSoalindex == maxSoal2) {
             Debug.Log("Level selesai");
+            SceneManager.LoadScene("Level 2");
         }
     }
     
