@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class HealthBarManager : MonoBehaviour
 {
-    //how to get image component in child(?)
     public Image healthbar;
     private float currentHealth;
     private const int maxHealth = 5;

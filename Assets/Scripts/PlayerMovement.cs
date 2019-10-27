@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -30,10 +31,7 @@ public class PlayerMovement : MonoBehaviour
 
     // Update is called once per frame
     void Update() {
-        //cek nyawa utk gim over
-        if (playerHealth.getHealth() <= 0) {
-            Debug.Log("Gim Over" + playerHealth.getHealth());
-        }
+        gimOver(playerHealth.getHealth());
     }
 
     void FixedUpdate()
@@ -42,6 +40,13 @@ public class PlayerMovement : MonoBehaviour
         Move();
         //Jumping
         Jump();
+    }
+
+    void gimOver(float currHealth) {
+        if (currHealth < 0) {
+        Debug.Log("Gim Over" + playerHealth.getHealth());
+        //respawn?? ato gimana
+        }
     }
     
     void Move() {

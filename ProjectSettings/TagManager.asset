@@ -10,6 +10,9 @@ TagManager:
   - Orange
   - SkorText
   - Panel Soal
+  - Panel Soal 1
+  - Panel Penjelasan
+  - Panel Soal 2
   layers:
   - Default
   - TransparentFX

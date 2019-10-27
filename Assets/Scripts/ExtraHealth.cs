@@ -5,7 +5,7 @@ using UnityEngine;
 public class ExtraHealth : MonoBehaviour
 {
     private HealthBarManager healthbar;
-    private const int healAmount = 2;
+    [SerializeField] private const int healAmount = 3;
     private readonly string plyr = "Player";
     private void Awake() {
         healthbar = FindObjectOfType<HealthBarManager>();
