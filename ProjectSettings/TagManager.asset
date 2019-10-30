@@ -13,6 +13,11 @@ TagManager:
   - Panel Soal 1
   - Panel Penjelasan
   - Panel Soal 2
+  - Panel Level
+  - Main Menu Panel
+  - tujuan
+  - aturan
+  - indikator
   layers:
   - Default
   - TransparentFX
