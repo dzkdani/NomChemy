@@ -10,7 +10,7 @@ public class ElenmayerManager : MonoBehaviour
     private readonly string plyr = "Player";
     private void Awake() {
         soal = FindObjectOfType<SoalManager>();
-        elenUICounter  =FindObjectOfType<ElenCounter>();
+        elenUICounter  = FindObjectOfType<ElenCounter>();
     }
 
     private void OnCollisionEnter2D(Collision2D other) {

@@ -32,9 +32,10 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update() {
         gimOver(playerHealth.getHealth());
+
+        //exit
         if (Input.GetKeyDown(KeyCode.Escape)) {
             Application.Quit();
-            Debug.Log("keluar");
         }
     }
 
