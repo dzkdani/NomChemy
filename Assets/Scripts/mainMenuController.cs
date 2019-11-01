@@ -37,4 +37,6 @@ public class mainMenuController : MonoBehaviour
         }
     }
 
+    public void onBackToMenu() { SceneManager.LoadScene("Main Menu"); }
+
 }

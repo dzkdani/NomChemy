@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b49856a5f6a178b48b25b5838729d897, type: 3}
+  m_Name: penjelasanke-5
+  m_EditorClassIdentifier: 
+  tag: ID
+  benar: "Antara kation yang biloksnya\r\nberbeda di dalam larutan tidak\r\ndapat
+    membenttuk senyawa.\r\nFe = Besi\r\nO2- = Oksigen\r\nFe2+ dan Fe3+ dapat berikatan\r\ndengan
+    O2-\r\nKarena adanya muatan 2+ dan 3+\r\nmaka sesuai dengan aturan IUPAC\r\nnama
+    kation diberi angka romawi\r\n(II) jika muatanya 2+ dan (III) jika\r\nmuatannya
+    3+ sedangkan anion di\r\nberi akhiran -ida jadi senyawa ini\r\nadalah FeO = Besi
+    (II) Oksida dan\r\nFe2O3 = Besi(III) Oksida"
+  salah: "Antara kation yang biloksnya berbeda di dalam\r\nlarutan tidak dapat membenttuk
+    senyawa.\r\nFe = Besi\r\nO2- = Oksigen\r\nFe2+ dan Fe3+ dapat berikatan dengan
+    O2-\r\nKarena adanya muatan 2+ dan 3+ maka sesuai\r\ndengan aturan IUPAC nama
+    kation diberi angka\r\nromawi (II) jika muatanya 2+ dan (III) jika\r\nmuatannya
+    3+ sedangkan anion di beri akhiran -\r\nida jadi senyawa ini adalah FeO = Besi
+    (II)\r\nOksida dan Fe2O3 = Besi(III) Oksida\r\nMenurut aturan IUPAC :\r\nApabila
+    ada unsur ion yang berikatan ( kation\r\ndan anion) maka tata nama untuk kation
+    sama\r\ndengan nama unsur tersebt namun untuk\r\nsenyawa anion diberi akhiran
+    \u2013ida.\r\nSelain itu jumlah unsur tidak perlu disebutkan jumlahnya. (mono,
+    di, tri)\r\nNamun, diberi angka romawi kurung (II)/(III)\r\nkarena unsur ini memiliki
+    dua muatan sehingga\r\ndapat dibedakan"

@@ -10,14 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b04fa2e5ef92a0418f7348bbc3554e5, type: 3}
-  m_Name: nomor3
+  m_Name: lvl2_1
   m_EditorClassIdentifier: 
-  unsur1: Al3+
-  unsur2: O2-
-  dapatBereaksi: 1
-  pilA: Aluminum Oksigen
-  pilB: Aluminium Oksida
-  pilC: Dialuminium trioksida
-  pilD: Aluminium Dioksida
-  pilE: Trialuminium dioksida
+  tag: ID
+  unsur1: 
+  unsur2: 
+  unsur3: Salah satu komponen yang dibutuhkan pada proses fotosintesis adalah gas
+    karbon dioksida. Rumus kimia dari senyawa tersebut adalah..
+  dapatBereaksi: 0
+  pilA: CO
+  pilB: CO2
+  pilC: C2O
+  pilD: C3O
+  pilE: CO3
   pilBenar: 2

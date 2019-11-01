@@ -9,16 +9,17 @@ public class PlayerMovement : MonoBehaviour
     public float moveSpeed;
     private float movInput;
     private bool facingRight = true;
-    [Range(0,2)]
-    [SerializeField] private float fallMultiplier  = 2f;
-    [Range(0,1)]
-    [SerializeField] private float lowJumpMultiplier = 2f;
+    [SerializeField] private float fallMultiplier;
+    [Range(1,2)]
+    [SerializeField] private float lowJumpMultiplier;
     [Range(1,10)]
     public float jumpVelocity;
     public bool isGrounded = false;
 
     private Rigidbody2D rb;
-    [SerializeField] private HealthBarManager playerHealth;
+    private HealthBarManager playerHealth;
+
+    private SoalManager getLvl;
 
     private readonly string horizonMov = "Horizontal";
 
@@ -27,11 +28,16 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         
         playerHealth = FindObjectOfType<HealthBarManager>();
+        getLvl = FindObjectOfType<SoalManager>();
     }
 
     // Update is called once per frame
     void Update() {
         gimOver(playerHealth.getHealth());
+
+        if (Input.GetKey(KeyCode.Z) && isGrounded == true) {
+            rb.velocity = Vector2.up * jumpVelocity;
+        }
 
         //exit
         if (Input.GetKeyDown(KeyCode.Escape)) {
@@ -48,9 +54,8 @@ public class PlayerMovement : MonoBehaviour
     }
 
     void gimOver(float currHealth) {
-        if (currHealth < 0) {
-        Debug.Log("Gim Over" + playerHealth.getHealth());
-        //respawn?? ato gimana
+        if (currHealth < 0) { 
+            SceneManager.LoadScene("Level " + getLvl.currentlevel);        
         }
     }
     
@@ -68,13 +73,11 @@ public class PlayerMovement : MonoBehaviour
     void Jump() {
 
         //TheJump
-        if (Input.GetKeyDown(KeyCode.UpArrow) && isGrounded == true) {
-            rb.velocity = Vector2.up * jumpVelocity;
-        }
+        
         //SmoothJump
         if (rb.velocity.y < 0) {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (fallMultiplier - 1) * Time.deltaTime;
-        } else if (rb.velocity.y > 0 && !Input.GetKey(KeyCode.UpArrow)) {
+        } else if (rb.velocity.y > 0 && !Input.GetKey(KeyCode.Z)) {
             rb.velocity += Vector2.up * Physics2D.gravity.y * (lowJumpMultiplier - 1) * Time.deltaTime;
         }    
     }

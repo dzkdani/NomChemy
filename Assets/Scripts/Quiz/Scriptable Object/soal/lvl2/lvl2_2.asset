@@ -10,14 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b04fa2e5ef92a0418f7348bbc3554e5, type: 3}
-  m_Name: nomor1
+  m_Name: lvl2_2
   m_EditorClassIdentifier: 
-  unsur1: Na+
-  unsur2: Cl-
-  dapatBereaksi: 1
-  pilA: Natrium Klorin
-  pilB: Natrium Klorida
-  pilC: Natrium Klor
-  pilD: Natrium Diklorida
-  pilE: Dinatrium Klorida
+  tag: 
+  unsur1: 
+  unsur2: 
+  unsur3: "Nama dan rumus senyawa dari 1 atom P\r\ndan 5 atom Cl adalah\u2026."
+  dapatBereaksi: 0
+  pilA: Fosfor Klorida, PCl
+  pilB: Fosfor Pentaklorida, PCl5
+  pilC: Fosfor Pentafluorida, PF5
+  pilD: Fosfor Fluorida, PF
+  pilE: Fosfor(V) KloridaP5Cl
   pilBenar: 2

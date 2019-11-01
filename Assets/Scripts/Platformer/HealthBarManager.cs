@@ -7,7 +7,7 @@ public class HealthBarManager : MonoBehaviour
 {
     public Image healthbar;
     private float currentHealth;
-    private const int maxHealth = 5;
+    private const int maxHealth = 10;
     private const int minHealth = 0;
     private void Awake() {
         currentHealth = maxHealth;
@@ -21,6 +21,10 @@ public class HealthBarManager : MonoBehaviour
     }
     public void extraHealth(int heal) {
         currentHealth += heal;
+        if (currentHealth >= maxHealth) 
+        {
+            currentHealth = maxHealth;
+        }
         healthbar.fillAmount = currentHealth / maxHealth;
     }
 }

@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4b04fa2e5ef92a0418f7348bbc3554e5, type: 3}
+  m_Name: nomor5
+  m_EditorClassIdentifier: 
+  tag: ID
+  unsur1: Fe2+
+  unsur2: Fe3+
+  unsur3: O2-
+  dapatBereaksi: 0
+  pilA: Besi (II) Oksida, karna Fe3+ tidak dapat berikatan dengan O2-
+  pilB: Besi (III) Oksida, karna Fe2+ tidak dapat berikatan dengan O2-
+  pilC: Besi (II) Oksida dan Besi (III) Oksida
+  pilD: Besi (II) Dioksida dan Besi (III) Trioksida
+  pilE: Besi (III) Dioksida dan Besi (II) Trioksida
+  pilBenar: 3

@@ -10,14 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4b04fa2e5ef92a0418f7348bbc3554e5, type: 3}
-  m_Name: nomor2
+  m_Name: nomor4
   m_EditorClassIdentifier: 
-  unsur1: Mg2+
-  unsur2: S-
+  tag: ID
+  unsur1: Ca2+
+  unsur2: F-
+  unsur3: 
   dapatBereaksi: 1
-  pilA: Magnesium Sulfida
-  pilB: Magnesium Sulfur
-  pilC: Magnesium Sulfurida
-  pilD: Mangan Sulfur
-  pilE: Mangan Disulfida
-  pilBenar: 1
+  pilA: Kalsium Fluor
+  pilB: Dikalsium Fluorida
+  pilC: Kalsium Difluorida
+  pilD: Kalsium Difluor
+  pilE: Kalsium Fluorida
+  pilBenar: 5
